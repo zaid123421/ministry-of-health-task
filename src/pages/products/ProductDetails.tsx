@@ -87,7 +87,6 @@ export default function ProductDetails() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
           
           <div className="lg:col-span-2 space-y-6 md:space-y-8">
-            {/* Gallery Section */}
             <div className="bg-white p-4 md:p-8 rounded-3xl border border-gray-100 shadow-sm flex flex-col items-center">
               <div className="w-full max-w-[450px] aspect-square flex items-center justify-center mb-6">
                 <img 
@@ -105,7 +104,6 @@ export default function ProductDetails() {
               </div>
             </div>
 
-            {/* Product Core Info */}
             <div className="bg-white p-6 md:p-10 rounded-3xl border border-gray-100 shadow-sm">
               <div className="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
                 <div className="flex-1">
@@ -151,7 +149,6 @@ export default function ProductDetails() {
               </div>
             </div>
 
-            {/* Dynamic Reviews Section */}
             <div className="bg-white p-6 md:p-10 rounded-3xl border border-gray-100 shadow-sm">
               <h3 className="font-bold text-gray-900 mb-8 flex items-center justify-between">
                 Customer Reviews 
@@ -178,7 +175,6 @@ export default function ProductDetails() {
           </div>
 
           <div className="space-y-6">
-            {/* Technical Specs */}
             <div className="bg-white text-white p-6 md:p-8 rounded-3xl shadow-xl shadow-gray-200">
               <h3 className="font-bold text-sm mb-6 flex items-center gap-2 text-black">
                 <FaBoxOpen className="text-purple-400" /> Specifications
@@ -199,7 +195,6 @@ export default function ProductDetails() {
               </div>
             </div>
 
-            {/* Policies Section */}
             <div className="bg-white p-6 md:p-8 rounded-3xl border border-gray-100 shadow-sm">
               <h3 className="font-bold text-sm mb-8 text-gray-900 flex items-center gap-2">
                 <FaShieldAlt className="text-[#6339F9]" /> Service Policies
@@ -229,7 +224,6 @@ export default function ProductDetails() {
               </div>
             </div>
 
-            {/* QR Code Meta */}
             <div className="bg-white p-6 rounded-3xl border border-gray-100 shadow-sm flex flex-col items-center">
               <p className="text-[10px] font-bold text-gray-400 uppercase mb-4 text-center">Scan to Verify Product</p>
               <img src={product.meta.qrCode} className="w-24 h-24 border border-gray-50 p-2 rounded-xl mb-2" alt="QR Code" />

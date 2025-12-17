@@ -182,16 +182,15 @@ export default function Products() {
                 onChange={(e) => setSearch(e.target.value)} 
               />
             </div>
-            <button className="flex items-center justify-center gap-2 px-6 py-2 border border-gray-200 rounded-lg hover:bg-gray-50 text-gray-600 transition-all shadow-sm bg-white">
+            <button className="flex w-[125px] items-center justify-center gap-2 px-6 py-2 border border-gray-200 rounded-lg hover:bg-gray-50 text-gray-600 transition-all shadow-sm bg-white">
               <MdOutlineFilterAlt className="text-xl" />
               <span className="text-sm font-bold">Filters</span>
             </button>
           </div>
 
-<div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden w-full">
+          <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden w-full">
   
-  {/* حاوية التمرير الأفقي - تسمح بالتمرير داخلها فقط إذا كان الجدول أعرض من الشاشة */}
-  <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-gray-200">
+            <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-gray-200">
               <table className="w-full text-left border-collapse overflow-auto">
                 <thead className="bg-gray-50 text-gray-500 text-[11px] uppercase tracking-wider font-bold">
                   <tr>
