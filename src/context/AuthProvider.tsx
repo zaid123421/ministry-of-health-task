@@ -8,19 +8,18 @@ interface AuthProviderProps {
 }
 
 export const AuthProvider = ({ children }: AuthProviderProps) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(
-    localStorage.getItem("auth") === "true"
+const [isAuthenticated, setIsAuthenticated] = useState(
+    !!localStorage.getItem("token")
   );
 
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
 
   const login = () => {
-    localStorage.setItem("auth", "true");
     setIsAuthenticated(true);
   };
 
   const logout = () => {
-    localStorage.removeItem("auth");
+    localStorage.removeItem("token");
     setIsAuthenticated(false);
   };
 
